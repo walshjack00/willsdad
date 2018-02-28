@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Automate</title>
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main-div {
+            padding-top: 10%;
+        }
+
+        .title {
+            padding-top: 5%;
+        }
+
+        .output {
+            padding-right: 9.75%;
+        }
+        .list {
+            padding-top: 20%
+        }
+
+    </style>
+</head>
+
+<body style= "background:linear-gradient(#FFFFFF, #C6CAC9, #9E9E9E  ";>
+<div class="title">
+    <center>
+        <h1>Will Your Job Be Automated?</h1>
+    </center>
+</div>
+<div class="main-div">
+
+
+<center><p>This tool uses data collected by <a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf" target="_blank">this</a> paper by analyzing requirements of the job such as working with people and fiting into tight spaces.<br> Keep in mind that this is just a general guide and every situation is different.</p>
+
+<center>
+   <form method="POST">
+       {% csrf_token %}
+       {{ form }}
+       <input type="submit" value="Submit">
+   </form>
+
+</center>
+
+    <p>While this data set is very in depth, it is impossible to have every job possible, keep your job title as simple as possible.<br> For example priests, deacons, bishops, and anything similar are all labeled as "Clergy"</p></center>
+
+</div>
+</body>
+<div class="list">
+    <center>
+    <p6>
+Need help finding your job? click <a href="https://1drv.ms/x/s!AoYXE9KolyyLgxt1l4PPYhh4IhK7" target="_blank"> here </a>to get a full list of jobs avaliable.
+    </p6>
+    </center>
+</div>
+
+</html>
+
