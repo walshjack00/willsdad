@@ -16,7 +16,7 @@ def resultpage(request, job):
 
     result = sheet_ranges['B'][row]
 
-    multiple_cells = sheet_ranges['A1':'A294']
+    multiple_cells = sheet_ranges['A1':'A300']
     for index, row in enumerate(multiple_cells):
 
         for zccell in row:
