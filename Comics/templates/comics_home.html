@@ -1,25 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Automate</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1348.17">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
-  </style>
+<title>Automate</title>
+
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main-div {
+            padding-top: 10%;
+        }
+
+        .title {
+            padding-top: 5%;
+        }
+
+        .output {
+            padding-right: 9.75%;
+        }
+        .list {
+            padding-top: 10%
+        }
+
+    </style>
 </head>
-<body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; text-align: center; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Will Your Job Be Automated?</b></span></h1>
-<p class="p2"><span class="s1">This tool uses data collected by <a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf"><span class="s2">this</span></a> paper by analyzing requirements of the job such as working with people and fitting into tight spaces.<br>
-Keep in mind that this is just a general guide and every situation is different.</span></p>
-<p class="p3"><span class="s1">{% csrf_token %} {{ form }}<span class="Apple-converted-space"> </span></span></p>
-<p class="p2"><span class="s1">While this data set is very in depth, it is impossible to have every job possible, please consult the list below to find the correct title for your job.<br>
-</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space"> </span>Click <a href="https://1drv.ms/x/s!AoYXE9KolyyLgxt1l4PPYhh4IhK7"><span class="s2">here </span></a>to get a full list of jobs available.<span class="Apple-converted-space"> </span></span></p>
+
+<body style= "background:linear-gradient(#FFFFFF, #C6CAC9, #9E9E9E  ";>
+<div class="title">
+    <center>
+        <h1>Will Your Job Be Automated?</h1>
+    </center>
+</div>
+<div class="main-div">
+
+
+<center><p>This tool uses data collected by <a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf" target="_blank">this</a> paper by analyzing requirements of the job such as working with people and fiting into tight spaces.<br> Keep in mind that this is just a general guide and every situation is different.</p>
+
+<center>
+   <form method="POST">
+       {% csrf_token %}
+       {{ form }}
+       <input type="submit" value="Submit">
+   </form>
+
+</center>
+
+    <p>While this data set is very in depth, it is impossible to have every job possible, please consult the list below to find the correct title for your job</p>
+</center>
+</div>
 </body>
+<div class="list">
+    <center>
+    <p6>
+Click <a href="https://1drv.ms/x/s!AoYXE9KolyyLgxt1l4PPYhh4IhK7" target="_blank"> here </a>to get a full list of jobs avaliable.
+    </p6>
+    </center>
+</div>
+
 </html>
+
